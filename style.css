@@ -1,2 +1,33 @@
 /* Mobile first 375px */
+/* SECCION NAV */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.content-left{
+    display: flex;
+    align-content: flex-start;
+    align-items: baseline;
+}
+.fa-bars, .fa-shopping-cart{
+    font-size: 20px;
+    margin: 10px;
+    color: grey;
+}
+.content-right{
+    display: flex;
+    align-content: flex-end;
+    
+}
+.logo{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 10px 0 10px;
+}
 
+.content-profile{
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+}
