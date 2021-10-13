@@ -13,21 +13,48 @@
 .fa-bars, .fa-shopping-cart{
     font-size: 20px;
     margin: 10px;
-    color: grey;
+    color: hsl(219, 9%, 45%);
 }
 .content-right{
     display: flex;
     align-content: flex-end;
-    
 }
 .logo{
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 700;
     margin: 0 10px 0 10px;
+    color: hsl(220, 13%, 13%);
 }
-
 .content-profile{
     width: 28px;
     height: 28px;
     padding: 5px;
+}
+.content-menu-mobile{
+    width: 230px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding-top:10px;
+    padding-left:30px;
+    background-color: white;
+    display: none;
+}
+.fa-times{
+    font-size: 18px;
+    color: hsl(219, 9%, 45%);
+}
+.list-menu{
+    list-style: none;
+    padding: 0;
+}
+.list-menu > li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: hsl(220, 13%, 13%);
 }
