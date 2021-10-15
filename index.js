@@ -5,4 +5,5 @@ const modalShoppingCart = document.querySelector(".content-modal-shopping-cart")
 
 iconShoppingCart.onclick = ()=>{
     modalShoppingCart.classList.toggle("ocultar")
+    
 }
