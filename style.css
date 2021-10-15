@@ -67,9 +67,20 @@
     display: flex;
     background-color:white;
     border-radius: 10px;
-    width: 100%;
+    width: 95%;
     height: 250px;
     box-shadow: -2px 3px 23px -1px rgba(196,192,196,1);
+    flex-direction: column;
+    padding: 10px;
+}
+.title{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(219, 9%, 45%);
 }
 .ocultar{
     display: none;
