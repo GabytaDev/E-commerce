@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,48 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/037e0b5327.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Mobile first 375px -->
-    <nav>
-        <div class="nav-bar">
-            <div class="content-left">
-                <i class="fas fa-bars"></i>
-                <h1 class="logo">snakers</h1>
+    <header>
+        <!-- Mobile first 375px -->
+        <nav>
+            <div class="nav-bar">
+                <div class="content-left">
+                    <i class="fas fa-bars"></i>
+                    <h1 class="logo">snakers</h1>
+                </div>
+                <div class="content-right">
+                    <i class="fas fa-shopping-cart" id="icon-shopping-cart"></i>
+                    <img src="img/image-avatar.png" alt="image-profile" class="content-profile">
+                </div>
             </div>
-            <div class="content-right">
-                <i class="fas fa-shopping-cart"></i>
-                <img src="img/image-avatar.png" alt="image-profile" class="content-profile">
+            <!-- menu open mobile -->
+            <nav class="content-menu-mobile">
+                <i class="fas fa-times"></i>
+                <ul class="list-menu">
+                    <li><a href=""></a>Collections</li>
+                    <li><a href=""></a>Men</li>
+                    <li><a href=""></a>Women</li>
+                    <li><a href=""></a>About</li>
+                    <li><a href=""></a>Contact</li>
+                </ul>
+            </nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- modal carrito vacio -->
+        <div class="content-modal-shopping-cart ocultar">
+            <div class="modal-cart-empty">
+
             </div>
         </div>
-         <!-- menu open mobile -->
-        <nav class="content-menu-mobile">
-            <i class="fas fa-times"></i>
-            <ul class="list-menu">
-                <li><a href=""></a>Collections</li>
-                <li><a href=""></a>Men</li>
-                <li><a href=""></a>Women</li>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Contact</li>    
-            </ul>
-        </nav>
         
-
-       <!-- modal carrito vacio -->
-       
-    </nav>
-    <main>
+        
         <section>
             <!-- carrousel de imagenes -->
         </section>
@@ -65,4 +75,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>
