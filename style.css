@@ -1,7 +1,7 @@
 /* Mobile 375px */
 /* SECCION NAV */
 @media screen and (min-width:375px ){
-    .content-menu-desktop{
+    .content-menu-desktop, .line{
         display: none;
     }
     .nav-bar{
@@ -112,6 +112,7 @@ hr {
         display: flex;
         justify-content: space-between;
         align-content: center;
+        align-items: baseline;
     }
     .content-menu-mobile{
         display: none;
@@ -126,9 +127,6 @@ hr {
     .content-menu-desktop{
         display: flex;
         flex-grow: 2;
-        align-content: center;
-        align-items: center;
-        justify-content: space-evenly;
         font-family: 'Kumbh Sans', sans-serif;
     }
     .list-menu{
@@ -139,19 +137,27 @@ hr {
         padding-bottom: 10px;
         margin: 0 20px 0 20px;
         font-weight:normal;
-        color: hsl(219, 9%, 45%);
+        color: hsl(220, 3%, 65%);
     }    
     .content-profile{
         width: 40px;
         height: 40px;
         padding: 5px;
+        border-radius: 50%;
+        border:1px solid transparent;
     }
+    .content-profile:hover{
+        border:1px solid orange;
+    }
+
     .center{
         margin: 0 50px 0 50px;
     }
-    
+    .line{
+        display: block;
+        width: auto;
+    }
    
-    
     .content-modal-shopping-cart{
         position: absolute;
         right: 70px;
