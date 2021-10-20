@@ -1,6 +1,9 @@
-/* Mobile first 375px */
+/* Mobile 375px */
 /* SECCION NAV */
-@media screen and (max-width:375px ){
+@media screen and (min-width:375px ){
+    .content-menu-desktop{
+        display: none;
+    }
     .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -27,6 +30,8 @@
     margin: 0 10px 0 10px;
     color: hsl(220, 13%, 13%);
 }
+/* agregar al perfil el hover  */
+
 .content-profile{
     width: 28px;
     height: 28px;
@@ -100,15 +105,52 @@ hr {
 .ocultar{
     display: none;
 }
-/* DESKTOP 
-@media screen and (max-width:1440px) {
-    .center{
-        margin-left: 30px;
-        margin-right: 30px;
+/* DESKTOP */
+
+@media screen and (min-width:1440px) {
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
     }
     .content-menu-mobile{
         display: none;
     }
+    .content-right{
+        display: flex;
+        align-content: flex-end;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .content-menu-desktop{
+        display: flex;
+        flex-grow: 2;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+    .list-menu{
+        display: flex;
+    }
+    .list-menu > li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 20px 0 20px;
+        font-weight:normal;
+        color: hsl(219, 9%, 45%);
+    }    
+    .content-profile{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    .center{
+        margin: 0 50px 0 50px;
+    }
+    
+   
     
     .content-modal-shopping-cart{
         position: absolute;
@@ -116,4 +158,4 @@ hr {
     } 
 }
 
-*/
+
