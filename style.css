@@ -163,7 +163,11 @@ hr {
     } 
 
     /* Seccion imagenes productos */
-    .content-img-product{
+    .content-principal{
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-img-product, .content-info-product{
         display: flex;
         width: 445px;
         height: 445px;
