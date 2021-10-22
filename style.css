@@ -100,6 +100,8 @@ hr {
     display: none;
 }
 
+
+
 }
 .ocultar{
     display: none;
@@ -159,6 +161,30 @@ hr {
         position: absolute;
         right: 70px;
     } 
+
+    /* Seccion imagenes productos */
+    .content-img-product{
+        display: flex;
+        width: 445px;
+        height: 445px;
+        border-radius: 30px;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    .img-product{
+        border-radius: 20px;
+    }
+    .content-miniaturas{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .miniatura{
+        width: 93px;
+        height: 93px;
+        border-radius: 5px;
+    }
 }
 
 
