@@ -78,13 +78,13 @@
     flex-direction: column;
     
     }
-    .title{
+    .title-modal{
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bold;
     padding: 18px;
     margin: 0;
     }
-    .text{
+    .text-modal{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,6 +136,28 @@
         position: absolute;
         top:200px;
         right: 10px;
+    }
+    /* informacion de producto- textos */
+    .content-info-product{
+        margin:0 20px 0 20px;
+    }
+    .sub-title{
+        font-family:'Kumbh Sans', sans-serif;
+        color: hsl(36deg 100% 55%);
+        font-size: 14px;
+        font-weight: bold;   
+    }
+    .title{
+        font-family:'Kumbh Sans', sans-serif; 
+    }
+    .text-product{
+        font-family:'Kumbh Sans', sans-serif; 
+        font-weight:normal;
+        color: hsl(220, 3%, 65%);
+    }
+    .content-price{
+        display: flex;
+        justify-content: space-between;
     }
 }
 .ocultar{
