@@ -19,21 +19,56 @@ iconShoppingCart.onclick = ()=>{
     
 }
 
+//Carrousel imagenes mobile//
 
-/*
-const desktop = window.matchMedia('(max-width: 1025px)');
+window.onload = ()=>{
+    const imagenes = [
+        `./img/image-product-1.jpg`,
+        `./img/image-product-2.jpg`,
+        `./img/image-product-3.jpg`,
+        `./img/image-product-4.jpg`
+    ];
 
-function desktop_responsive(){ 
-     if(desktop.matches){ 
-         $('body').css('background','darkblue'); } 
-} 
-desktop_responsive(desktop); 
-desktop.addEventListener(desktop_responsive); 
+    const tiempoIntervaloMilSeg = 1000;
+    let posicionActual = 0;
+    let botonRetroceder = document.querySelector("#retroceder");
+    let botonAvanzar = document.querySelector("#avanzar");
+    let imagen = document.querySelector("#imagen");
 
-const mobile = window.matchMedia('(max-width: 375px)'); 
-function mobile_responsive(){ 
-    if (mobile.matches){
-         $('body').css('background','darkorange'); } 
-} 
-mobile_responsive(mobile); 
-mobile.addEventListener(mobile_responsive);*/
+/*** Funcion que cambia la imagen en la siguiente posicion (next)*/
+
+    const pasarImagen = ()=>{
+        if(posicionActual >= imagenes.length - 1) {
+            posicionActual = 0;
+        } else {
+            posicionActual++;
+        }
+        renderizarImagen();
+    }
+/*** Funcion que cambia la imagen en posicion anterior (back)*/
+
+    const retrocederImagen = ()=>{
+        if(posicionActual <= 0) {
+            posicionActual = imagenes.length - 1;
+        } else {
+            posicionActual--;
+        }
+        renderizarImagen();
+    }
+ /*** Funcion que actualiza la imagen de imagen dependiendo de posicionActual*/   
+    const renderizarImagen = ()=>{
+        imagen.style.backgroundImage = `url(${imagenes[posicionActual]})`;
+    }
+
+    // Eventos
+    botonAvanzar.addEventListener('click', pasarImagen);
+    botonRetroceder.addEventListener('click', retrocederImagen);
+    
+
+    // Iniciar
+    renderizarImagen();
+
+}
+
+
+
