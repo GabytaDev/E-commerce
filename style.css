@@ -141,12 +141,6 @@
     .content-info-product{
         margin:0 20px 0 20px;
     }
-    .sub-title{
-        font-family:'Kumbh Sans', sans-serif;
-        color: hsl(36deg 100% 55%);
-        font-size: 14px;
-        font-weight: bold;   
-    }
     .title{
         font-family:'Kumbh Sans', sans-serif; 
     }
@@ -158,7 +152,36 @@
     .content-price{
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        justify-items: left;
+        align-items: baseline;   
     }
+    .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .tag-price{
+        width: 54px;
+        height: 28px;
+        border-radius: 3px;
+        background-color:hsl(25, 100%, 94%);
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-title{
+        font-family:'Kumbh Sans', sans-serif;
+        color: hsl(36deg 100% 55%);
+        font-size: 14px;
+        font-weight: 600;     
+    }
+    .tachado {
+        text-decoration: line-through;
+        font-weight:600
+    }
+    
 }
 .ocultar{
     display: none;
