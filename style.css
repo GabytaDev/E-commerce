@@ -238,6 +238,7 @@
         align-content: flex-end;
         align-items:center;
         justify-content: space-evenly;
+        cursor: pointer;
     }
     .content-right > .fa-shopping-cart{
         margin-right: 40px;
@@ -252,6 +253,7 @@
     }
     .list-menu{
         display: flex;
+        cursor: pointer;
     }
     .list-menu > li{
         padding-top: 10px;
@@ -312,6 +314,7 @@
         width: 93px;
         height: 93px;
         border-radius: 5px;
+        cursor: pointer;
     }
     .content-price{
         display: flex;
@@ -322,14 +325,17 @@
         width: 100%;
         justify-content: space-between;
         flex-direction: row;
-        align-items: baseline;
-    
+        align-items: baseline;  
+    }
+    .fa-minus, .fa-plus{
+        cursor: pointer;
     }
     .unit-counter{
         width: 160px;
     }
     .btn-buy-cart{
         width: 272px;
+        cursor: pointer;
     }
 }
 
