@@ -51,6 +51,7 @@
     padding-left:30px;
     background-color: white;
     display: none;
+    z-index: 1;
     }
     .fa-times{
     font-size: 18px;
@@ -204,12 +205,12 @@
         background-color: hsl(26, 100%, 55%);
         border-radius: 5px;
         border:none;
-        box-shadow: 0px 41px 95px -33px rgba(250,182,73,1);
+        box-shadow:0px 18px 34px -19px rgba(250,182,73,0.7);
         color: white;
         font-family:'Kumbh Sans', sans-serif;
         font-weight: 600;
     }
-    .fa-shopping-cart{
+    .btn-buy-cart >.fa-shopping-cart{
         color: white;
     }
     .fa-plus, .fa-minus{
@@ -233,6 +234,11 @@
     .content-right{
         display: flex;
         align-content: flex-end;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    .content-right > .fa-shopping-cart{
+        margin-right: 40px;
     }
     #icon-menu-mobile, .content-menu-mobile{
         display: none;
@@ -262,7 +268,6 @@
     .content-profile:hover{
         border:1px solid orange;
     }
-
     .center{
         margin: 0 50px 0 50px;
     }
