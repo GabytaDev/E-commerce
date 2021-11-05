@@ -339,6 +339,12 @@
         border-radius: 5px;
         cursor: pointer;
     }
+    .miniatura:hover{
+        border: 2px solid hsl(26, 100%, 55%);
+        transition:all .5s ease-in-out;
+        filter: opacity(.5);
+        
+    }
     .content-price{
         display: flex;
         flex-direction: column;
