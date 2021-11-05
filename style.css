@@ -262,6 +262,10 @@
         color: hsl(220, 3%, 65%);
         cursor: pointer;
     }  
+    .list-menu li:hover{
+        font-weight: 400;
+        color: black;
+    }
     .list-menu li {
         position: relative;
         display: block;
@@ -340,7 +344,6 @@
         cursor: pointer;
     }
     .miniatura:hover{
-        border: 2px solid hsl(26, 100%, 55%);
         transition:all .5s ease-in-out;
         filter: opacity(.5);
         
