@@ -200,6 +200,10 @@
         font-size: 18px;
         font-family:'Kumbh Sans', sans-serif;
     }
+    .btn-minus ,.btn-plus{
+        border: none;
+        background-color:rgb(246, 246, 246);
+    }
     .btn-buy-cart{
         width: 100%;
         height: 50px;
