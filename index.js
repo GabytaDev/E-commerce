@@ -19,7 +19,6 @@ const modalShoppingCart = document.querySelector(".content-modal-shopping-cart")
 
 iconShoppingCart.onclick = ()=>{
     modalShoppingCart.classList.toggle("ocultar")
-    
 }
 
 //Carrousel imagenes mobile//
@@ -92,9 +91,15 @@ idBtnPlus.onclick = ()=>{
     numberCount = numberCount+ 1
     spanNumberCount.innerHTML =`${numberCount}`
     console.log(numberCount, "plus")
+    if(numberCount >0){
+        idBtnMinus.disabled = false
+    }
 }
 //ver cuando volves a sumar que no se aplica
 
+//text modal el p se muestra si no hay productos
+// maquetar seccion que muestra cuando se agrega producto
+// hacer funcion 
 
 
 
