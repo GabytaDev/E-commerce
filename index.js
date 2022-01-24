@@ -1,8 +1,11 @@
-//abrir y cerrar menu mobile
+// Elementos del DOM
 const iconMenuMobile = document.querySelector("#icon-menu-mobile")
 const menuOpenMobile = document.querySelector(".content-menu-mobile")
 const iconCloseMenuMobile = document.querySelector(".fa-times")
-
+const idBtnMinus = document.getElementById("id-btn-minus")
+const idBtnPlus = document.getElementById("id-btn-plus")
+let numberCount = document.getElementById("number-count")
+//abrir y cerrar menu mobile
 iconMenuMobile.onclick = ()=>{
     menuOpenMobile.style.display = "block"
 }
@@ -69,6 +72,29 @@ window.onload = ()=>{
     renderizarImagen();
 
 }
+
+/***Funcion add unit */
+numberCount = 0;
+
+let spanNumberCount = document.querySelector(".span-number-count")
+idBtnMinus.onclick = ()=>{
+    numberCount = numberCount-1
+    spanNumberCount.innerHTML =`${numberCount}`
+    console.log(numberCount,"minus")
+    if(numberCount === 0){
+        idBtnMinus.disabled =true
+    }else{
+        idBtnMinus.disabled = false
+    }
+}
+
+idBtnPlus.onclick = ()=>{
+    numberCount = numberCount+ 1
+    spanNumberCount.innerHTML =`${numberCount}`
+    console.log(numberCount, "plus")
+}
+//ver cuando volves a sumar que no se aplica
+
 
 
 

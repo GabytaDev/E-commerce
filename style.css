@@ -345,8 +345,9 @@
         width: 93px;
         height: 93px;
         border-radius: 5px;
-        cursor: pointer;
+        cursor: pointer; 
     }
+   
     .miniatura:hover{
         transition:all .5s ease-in-out;
         filter: opacity(.5);
