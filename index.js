@@ -95,7 +95,6 @@ idBtnPlus.onclick = ()=>{
         idBtnMinus.disabled = false
     }
 }
-//ver cuando volves a sumar que no se aplica
 
 //text modal el p se muestra si no hay productos
 // maquetar seccion que muestra cuando se agrega producto
