@@ -5,6 +5,10 @@ const iconCloseMenuMobile = document.querySelector(".fa-times")
 const idBtnMinus = document.getElementById("id-btn-minus")
 const idBtnPlus = document.getElementById("id-btn-plus")
 let numberCount = document.getElementById("number-count")
+const btnAddToCart = document.getElementById("btn-add-to-cart")
+const priceProduct = document.querySelector("#price-product")
+const spanPriceModal = document.querySelector(".price-modal")
+const totalPrice = document.querySelector(".total-price")
 //abrir y cerrar menu mobile
 iconMenuMobile.onclick = ()=>{
     menuOpenMobile.style.display = "block"
@@ -99,6 +103,14 @@ idBtnPlus.onclick = ()=>{
 //text modal el p se muestra si no hay productos
 // maquetar seccion que muestra cuando se agrega producto
 // hacer funcion 
+const spanUnit = document.querySelector(".span-unit")
+let resultado = 0
+btnAddToCart.onclick= ()=>{
+    spanUnit.innerHTML = `${numberCount}`
+   let resultado = numberCount * 125
+    totalPrice.innerHTML = `$ ${resultado}`
+}
+
 
 
 
